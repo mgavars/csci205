@@ -101,3 +101,67 @@ Documentation-> /**
 
 javac MyProgram.java
 java MyProgram
+
+(4.1) How does the println(String) method behave? Copy and paste the description of the method.
+
+This method behaves as though it invokes print(String) and then println()
+
+public void println(String x)
+Prints a String and then terminate the line.
+
+(4.2) Go back to the page for the System class. The object out is the "standard" output stream. What is the object that represents the "standard" input stream? And, what is its type?
+
+The object in is the "standard" input stream. Its type is final which means its constant. 
+
+
+
+Programming is not a spectator sport!
+Time to execute: 395608
+
+
+(5.1) Why was the result 1 and not 1.5?
+
+Because both variables are defined as ints
+
+(5.2)What is the output of the code snippet above? Explain your results.
+
+The output of the code is now 1.5 because the answer was defined as a double, which is a floating point number. 
+
+(6.1) – Every Java program must contain a static main method with the header: public static void main( String[] args )
+What is the purpose of the args variable?
+
+It is an identifier that is passed as a parameter to the main method.
+
+(6.2) – What does the void keyword represent in a method
+declaration?
+
+Indicates that the method does not return anything to the caller.
+
+(6.3) – What is an "identifier"? What are the rules for naming identifiers?
+
+Abbreviations or names used to represent a particular class, variable, or method.
+
+(6.4) – What is a "keyword"?
+
+Special words in the Java language that have special meanings.
+
+(6.5) – What is similar between a float and a double variable? What is different?
+
+They both allow variables to be stored as decimal, but double can store approximately twice the number of significant digits as type float.
+
+(6.6) – What is similar between byte, short, int, and long variables? What is different?
+
+They all store signed numeric values, but a byte only holds one byte, a short stores it in two bytes, an int stores it in four bytes, and long stores it in eight.
+
+(6.7) – Is String a primitive type in Java? If not, what is it?
+
+No it is not a primitive type in Java. The String data type is a class. 
+
+(6.8) – Write the Java declaration for a String variable called name, and initialize it with your name.
+
+String name = new String("Mitch Gavars");
+
+(6.9) – What do we mean by the "scope" of a variable?
+
+The scope indicates the lifetime of a variable.
+
