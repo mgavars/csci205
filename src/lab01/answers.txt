@@ -74,4 +74,30 @@ They are addressed by their SHA-1 hash which is a 40-character string composed o
 
 There are three states that a file under the GIT VCS system can be in: committed, modified, or staged. When a file is committed then the data is stored in the Git directory which stores the metadata and object database for the whole project. Modified means the file has been changed but not committed to the Git database yet, the modified file is in the working directory. Staged files have snapshots stored in the staging area, where its a file, and stores information about what will go into your next commit.
 
-  
+(3.1) What are bytecodes and how are they generated?
+
+The machine language of the Java Virtual Machine. When a JVM loads a class file, it gets one stream of bytecodes for each method in the class.
+
+(3.2) Name a benefit of developing a system to run on a virtual machine such as the JVM
+
+The same .class files are capable of running on multiple Operating Systems.
+
+(3.3) Name one downside of using the JVM as opposed to developing code that executes directly on the native hardware
+
+Java platform can be a bit slower than native code. 
+
+(3.4) Read through the page on how Java Technology will
+"change your life". Do you believe everything you read? Do you find anything wrong? Defend your answer.
+
+I do not believe everything I read. It says that because Java is simpler than C++, my development time will be twice as fast when writing. I am just beginning to learn the language so my development time will be about four times as slow. 
+
+(3.5) List the three types of comments used in the Java language.
+
+Single Line-> //
+Multi Line-> /*
+Documentation-> /**
+
+(3.6) Suppose I had a program called MyProgram.java. What steps would I take to compile and run the program?
+
+javac MyProgram.java
+java MyProgram
