@@ -1,0 +1,77 @@
+Mitch Gavars
+csci205 Lab01
+1pm
+
+
+(1.1) What is the full path to your home directory?
+ 
+/home/accounts/student/m/mag051
+
+(1.2) What does the -a option do?
+
+Shows all files in the directory including hidden ones
+
+(1.3) What does the -l option do?
+
+Put all items in directory in a list, one per line
+
+(1.4) What option sorts the output of all listing all files by the modification time on each file? Does it sort with the most recent file listed first, or the oldest file first?
+
+ls -lt sorts with the most recent file listed first
+
+(1.5) What options would you need to specify in order to sort the output of the previous step, but in the reverse order?
+
+Specify to use -r so the full command would be: ls -lt -r
+
+(1.6) What option sorts the output by file size?
+
+ls -lS
+
+(1.7) Copy and paste your output for ls -lR csci205 into answers.txt
+
+csci205:
+total 4
+drwx--x--x 3 mag051 student 4096 Jan 14 13:28 src
+
+csci205/src:
+total 4
+drwx--x--x 2 mag051 student 4096 Jan 15 18:51 lab01
+
+csci205/src/lab01:
+total 8
+-rw------- 1 mag051 student 775 Jan 15 18:54 #answers.txt#
+-rw------- 1 mag051 student 300 Jan 14 13:52 answers.txt
+
+
+(2.1) What is a version control system?
+
+A system that records changes to a file or set of set of files over time so that you can recall specific versions later.
+
+(2.2) List the three types of version control systems, and give an example scenario where each would be useful.
+
+Local Version Control System (LVCS)
+      Useful for copying files into another directory. Used in a system called RCS.
+
+Centralized Version Control System (CVCS)
+      Allows developers to collaborate on systems. Administrators have control over who can do what. Examples are CVS, Subversion, and Perforce.
+
+Distributed Version Control System (DVCS)
+      Clients can check out the latest snapshots of files along with fully mirroring the repository, including its full history. Examples are GIT, Mercurial, Bazaar, or Darcs.       
+
+(2.3) What type of version control system is Git?
+
+Git is a Distributed Version Control System. 
+
+(2.4) Most operations in Git are performed locally. What does that mean? Name two reasons why this is a beneficial feature to have.
+
+This means that it only needs local files and resources to operate. This is beneficial because the project history can be accessed from the local database and you can work a lot of your work if you are offline or off VPN.
+
+(2.5) How are objects in the Git database addressed? Explain.
+
+They are addressed by their SHA-1 hash which is a 40-character string composed of hexadecimal characters (0-9 and a-f).
+
+(2.6) In a short paragraph, and in YOUR OWN WORDS, explain the three states that a file can be in that is under the Git VCS system.
+
+There are three states that a file under the GIT VCS system can be in: committed, modified, or staged. When a file is committed then the data is stored in the Git directory which stores the metadata and object database for the whole project. Modified means the file has been changed but not committed to the Git database yet, the modified file is in the working directory. Staged files have snapshots stored in the staging area, where its a file, and stores information about what will go into your next commit.
+
+  
