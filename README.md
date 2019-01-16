@@ -1,7 +1,7 @@
 # CSCI 205 - Software Engineering and Design
 ## Course Info
 Prof. Dancy
-Semester: Spring 2019
+Semester: Spring 2019\n
 Section: 1pm
 
 ## Student Info
