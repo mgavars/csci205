@@ -1,11 +1,14 @@
 # CSCI 205 - Software Engineering and Design
 ## Course Info
 Prof. Dancy
-Semester: Spring 2019\n
+
+Semester: Spring 2019
+
 Section: 1pm
 
 ## Student Info
 Mitch Gavars
+
 Major: Computer Science & Engineering
 
 My name is Mitch Gavars and I am from Chicago, IL. I am currently a student at Bucknell University. I am a member of the Swimming and Diving team and the Vice President of
