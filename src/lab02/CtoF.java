@@ -25,16 +25,45 @@ public class CtoF
 	// Create the Scanner object, attached to console input
 	Scanner in = new Scanner(System.in);
 
-        // Prompt user for a Celsius temp
-	System.out.print("Enter temperature in Celsius: ");
+	while(true)
+	{
 
-        // Read and store the Celsius temp
-	int celsiusTemp = in.nextInt();
+		// Prompt user for a Celsius temp
+		System.out.print("Enter a temperature in Celsius: ");
 
-        // Convert the temp to Fahrenheit
-	double fahTemp = celsiusTemp * 9.0 / 5 + 32;
+		// Read and store the Celsius temp
+		int celsiusTemp = in.nextInt();
 
-        // Output the results with correct formatting, one significant digit
-	System.out.printf("%d C = %.1f F\n",celsiusTemp, fahTemp);
+		// Convert the temp to Fahrenheit
+		double fahTemp = celsiusTemp * 9.0 / 5 + 32;
+
+		// Output the results with correct formatting, one significant digit
+		System.out.printf("%d C = %.1f F\n",celsiusTemp, fahTemp);
+
+		if (fahTemp > 85)
+		{
+			System.out.println("It's HOT! I need A/C!");
+		}
+		else if (fahTemp > 60)
+		{
+			System.out.println("It's comfotably warm");
+		}
+		else if (fahTemp > 32)
+		{
+			System.out.println("It's a bit cool out");
+		}
+		else
+		{
+			System.out.println("Brrr... it is FREEZING out!");
+		}
+		
+		System.out.print("Try again? [y | n] ");
+		if (in.next().equalsIgnoreCase("n"))
+			{
+				System.out.println("Goodbye!");
+				break;	
+			}
+	}
+	
     }
 }
