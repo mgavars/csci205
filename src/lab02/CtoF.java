@@ -5,7 +5,7 @@
  * Name: Mitch Gavars
  * Date: 01/16/2019
  *
- * Lab: Lab02, Exercise 2
+ * Lab: Lab02, Exercise 3
  *
  * @author Brian King, 2012-Fall
  *
