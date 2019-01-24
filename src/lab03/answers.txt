@@ -1,0 +1,64 @@
+/* *****************************************
+* CSCI205 - Software Engineering and Design
+* Spring 2019
+* Instructor: Prof. Dancy
+* Section: 1pm
+*
+* Name: Mitch Gavars
+* Date: 01/23/2019
+*
+* Lab / Assignment: Lab03 Methods, and the String class
+*
+* Description: Learning about branching, interations in the String class, writing static methods, and recursion
+*
+*
+* *****************************************/
+
+### Q1 ###
+$ git log --oneline --decorate
+bc35e28 (HEAD, master) more work
+cccb262 Init commit
+
+### Q3 ###
+$ git log --oneline --decorate
+3738617 (HEAD, myFeature) Adidas NMD Pharrell Inspiration Pack White
+2245263 ...testing
+bc35e28 (master) more work
+cccb262 Init commit
+
+### Q4 ###
+$ git diff master
+diff --git a/Main.java b/Main.java
+index 5e727e2..408349e 100644
+--- a/Main.java
++++ b/Main.java
+@@ -2,5 +2,7 @@ public class Main {
+        public static void main( String[] args ) {
+                System.out.println( "Init commit" );
+                System.out.println( "more work" );
++               System.out.println( "...testing" );
++               System.out.println( "Adidas NMD Pharrell Inspiration Pack White" );
+        }
+ }
+
+
+### Q5 ###
+$ git log --oneline --decorate --all
+3738617 (myFeature) Adidas NMD Pharrell Inspiration Pack White
+2245263 ...testing
+bc35e28 (HEAD, master) more work
+cccb262 Init commit
+
+
+### Q6 ###
+$ git log --oneline --decorate --all
+3738617 (HEAD, myFeature, master) Adidas NMD Pharrell Inspiration Pack White
+2245263 ...testing
+bc35e28 more work
+cccb262 Init commit
+
+
+
+
+
+
