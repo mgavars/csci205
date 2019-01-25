@@ -19,6 +19,11 @@ $ git log --oneline --decorate
 bc35e28 (HEAD, master) more work
 cccb262 Init commit
 
+### Q2 ###
+$ git log --oneline --decorate
+bc35e28 (HEAD, myFeature, master) more work
+cccb262 Init commit
+
 ### Q3 ###
 $ git log --oneline --decorate
 3738617 (HEAD, myFeature) Adidas NMD Pharrell Inspiration Pack White
@@ -58,7 +63,8 @@ bc35e28 more work
 cccb262 Init commit
 
 
-
+Fibonacci Comparison: 
+The recursive version of Fibonacci is much more computationally expensive than the non-recursive version because the recursive version must stack each time it recursively calls the method whereas the non-recursive version just keeps looping through until it is complete. My recursive version is not crashing no matter how large the number is, the completion time just keeps drastically increasing.
 
 
 
