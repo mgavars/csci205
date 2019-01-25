@@ -67,4 +67,26 @@ Fibonacci Comparison:
 The recursive version of Fibonacci is much more computationally expensive than the non-recursive version because the recursive version must stack each time it recursively calls the method whereas the non-recursive version just keeps looping through until it is complete. My recursive version is not crashing no matter how large the number is, the completion time just keeps drastically increasing.
 
 
+(1.1) t.length()
+	8
+(1.2) s.length() + t.length()
+	13
+(1.3) s + t
+	HelloCSCI 205
+(1.4) s.substring(2, 5)
+	llo
+(1.5) s.endsWith("lo")
+	True
+(1.6) t.charAt(5)
+	2
+(1.7) t.indexOf('5')
+	7
+(1.8) s.toUpperCase()
+	HELLO
+(1.9) t.substring(0,4) + Integer.parseInt(t.substring(5, 7)) * 10
+	CSCI200
+(1.10) Which is more efficient, and why, or are they both the same?
+	"String s = "MyString";" is more efficient because it only creates one string, whereas "String s = new String("MyString");" creates the new string "MyString" but then creates a second string to store the first string. 
+
+
 
