@@ -85,8 +85,17 @@ public class Fibonacci {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
 
+	long startTime = System.nanoTime();
         System.out.println("Recursive fib: " + recFib(n));
+	long estimatedTime = System.nanoTime() - startTime;
+	double estimatedTimeInMs = (System.nanoTime() - startTime)/1000000.0;
+	System.out.println("Time to execute recursive fibonacci: "+ estimatedTimeInMs + " ms");
+
+	long startTime2 = System.nanoTime();
         System.out.println("Non-recursive fib: " + nonRecFib(n));
+	long estimatedTime2 = System.nanoTime() - startTime2;
+	double estimatedTime2InMs = (System.nanoTime() - startTime2)/1000000.0;
+	System.out.println("Time to execute non-recursive fibonacci: "+ estimatedTime2InMs + " ms");
     }
 
 }

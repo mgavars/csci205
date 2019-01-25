@@ -66,6 +66,15 @@ cccb262 Init commit
 Fibonacci Comparison: 
 The recursive version of Fibonacci is much more computationally expensive than the non-recursive version because the recursive version must stack each time it recursively calls the method whereas the non-recursive version just keeps looping through until it is complete. My recursive version is not crashing no matter how large the number is, the completion time just keeps drastically increasing.
 
+$ java lab03/Fibonacci
+Request your fibonacci number:
+48
+Recursive fib: 512559680
+Time to execute recursive fibonacci: 49741.079417 ms
+Non-recursive fib: 512559680
+Time to execute non-recursive fibonacci: 0.664241 ms
+
+
 
 (1.1) t.length()
 	8
