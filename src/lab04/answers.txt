@@ -76,3 +76,38 @@ $ git log --graph --all --oneline --decorate
 * cccb262 Init commit
 
 
+TestGaussian 10,000 numbers:
+Generating 10,000 numbers...
+sd: 0.994150
+TIME: 71290.476000 usec
+alt_sd: 0.994157
+TIME: 847.034000 usec
+alt_sd computed in 1.17% of the time of sd
+
+TestGaussian 100,000 numbers:
+Generating 100,000 numbers...
+sd: 0.998428
+TIME: 78358.741000 usec
+alt_sd: 0.998474
+TIME: 5869.539000 usec
+alt_sd computed in 7.49% of the time of sd
+
+TestGaussian 1,000,000 numbers:
+Generating 1,000,000 numbers...
+sd: 0.999640
+TIME: 114108.467000 usec
+alt_sd: 0.999640
+TIME: 20473.112000 usec
+alt_sd computed in 17.94% of the time of sd
+
+TestGaussian 5,000,000 numbers:
+Generating 5,000,000 numbers...
+sd: 0.999649
+TIME: 124055.641000 usec
+alt_sd: 0.999649
+TIME: 30196.950000 usec
+alt_sd computed in 24.34% of the time of sd
+
+Why does the second approach for computing standard deviation perform so much faster than the first approach? Justify your answer.
+
+	The second approach is so much faster because instead of having two for loops, there is only one. Also, alt_sd is faster because it calculates the sum of the squares of each value instead of the sum of the squares of the distance from the mean, which just takes less operations. 
