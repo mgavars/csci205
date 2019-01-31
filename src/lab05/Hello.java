@@ -33,18 +33,26 @@ public class Hello {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Hello. What is your name? ");
-        String name = in.next();
-        System.out.println(name + ", becoming a good programmer takes practice");
+        greetUser();
 
+        int[] x = getArrayOfRandomNums();
+        System.out.println(Arrays.toString(x));
+    }
+
+    private static int[] getArrayOfRandomNums() {
         Random rand = new Random();
         int[] x = new int[NUM_INTS];
         for (int i = 0; i < NUM_INTS; i++) {
             x[i] = rand.nextInt(100);
         }
+        return x;
+    }
 
-        System.out.println(Arrays.toString(x));
+    private static void greetUser() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Hello. What is your name? ");
+        String name = in.next();
+        System.out.println(name + ", becoming a good programmer takes practice");
     }
 
 }
