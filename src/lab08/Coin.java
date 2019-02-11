@@ -21,7 +21,7 @@ package lab08;
  * @author mag051
  */
 public enum Coin {
-    NICKEL(.05), DIME(.10), QUARTER(.25);
+    PENNY(.01), NICKEL(.05), DIME(.10), QUARTER(.25), DOLLAR(1.00);
 
     private double value;
 
