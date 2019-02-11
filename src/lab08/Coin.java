@@ -21,5 +21,15 @@ package lab08;
  * @author mag051
  */
 public enum Coin {
-    NICKEL, DIME, QUARTER;
+    NICKEL(.05), DIME(.10), QUARTER(.25);
+
+    private double value;
+
+    Coin(double value) {
+        this.value = value;
+    }
+
+    double getValue() {
+        return this.value;
+    }
 }
