@@ -42,6 +42,7 @@ public class CashRegisterTest extends TestCase {
     @Override
     protected void tearDown() throws Exception {
         super.tearDown();
+        instance = null;
     }
 
     /**
