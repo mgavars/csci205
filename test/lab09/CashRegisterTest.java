@@ -18,6 +18,7 @@ package lab09;
 import java.util.LinkedList;
 import java.util.List;
 import junit.framework.TestCase;
+import static org.junit.Assert.assertNotEquals;
 
 /**
  *
@@ -141,7 +142,7 @@ public class CashRegisterTest extends TestCase {
     }
 
     /**
-     * Test of giveChange method, of class CashRegister.
+     * Test of giveChange method exception, of class CashRegister.
      */
     public void testGiveChangeException() throws Exception {
         System.out.println("giveChange");
@@ -174,6 +175,42 @@ public class CashRegisterTest extends TestCase {
             fail("Improper checking for high scanItem()");
         } catch (IllegalArgumentException expected) {
         }
+    }
+
+    /**
+     * Test of getPurchaseCount method, of class CashRegister.
+     */
+    public void testEquals() {
+        System.out.println("Equals");
+
+        // Create a new instance cash register
+        CashRegister instance2 = new CashRegister();
+
+        // Test the initial state. They should be the same
+        assertEquals(instance, instance2);
+
+        // Now, set up a test of two items
+        instance.scanItem(.55);
+        instance.scanItem(1.27);
+        instance.collectPayment(Money.DOLLAR, 1);
+        instance.collectPayment(Money.QUARTER, 3);
+        instance.collectPayment(Money.NICKEL, 1);
+        instance.collectPayment(Money.PENNY, 2);
+
+        assertNotEquals(instance, instance2);
+
+        instance2.scanItem(.55);
+        instance2.scanItem(1.27);
+        instance2.collectPayment(Money.DOLLAR, 1);
+        instance2.collectPayment(Money.QUARTER, 3);
+        instance2.collectPayment(Money.NICKEL, 1);
+        instance2.collectPayment(Money.PENNY, 2);
+
+        assertEquals(instance, instance2);
+
+        boolean expResult = true;
+        boolean result = instance.equals(instance2);
+        assertEquals(expResult, result);
     }
 
 }
