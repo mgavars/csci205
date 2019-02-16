@@ -15,6 +15,7 @@
  */
 package lab10;
 
+import java.text.ParseException;
 import java.util.Date;
 
 /**
@@ -26,8 +27,9 @@ public class HRDBSystem {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        Employee emp = new Employee(0, "Brian", "King", 123456789, new Date(),
+    public static void main(String[] args) throws ParseException {
+        Employee emp = new Employee(0, "Brian", "King", 123456789,
+                                    Employee.strToDate("2010-08-20"),
                                     60000);
         Manager mgr = new Manager(1, "Keith", "Buffinton", 101010101, new Date(),
                                   150000, "ENGINEERING");
