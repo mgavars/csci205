@@ -24,6 +24,7 @@ package lab10;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashSet;
 
 /**
  * Employee - represents an employee in the database system
@@ -42,6 +43,8 @@ public class Employee {
     private Date hireDate;
     private double salary;
 
+    private static HashSet<Integer> setOfIDs = new HashSet<Integer>();
+
     /**
      * Explicit construct to create new employee
      *
@@ -54,7 +57,13 @@ public class Employee {
      */
     public Employee(int empID, String firstName, String lastName, int ssNum,
                     Date hireDate, double salary) {
-        this.empID = empID;
+        if (setOfIDs.contains(empID) || empID <= 0) {
+            this.empID = generateID();
+        }
+        else {
+            this.empID = empID;
+        }
+        setOfIDs.add(this.empID);
         this.firstName = firstName;
         this.lastName = lastName;
         this.ssNum = ssNum;
@@ -84,6 +93,21 @@ public class Employee {
 
     public double getSalary() {
         return salary;
+    }
+
+    private static Integer generateID() {
+        if (setOfIDs.isEmpty()) {
+            return (Integer) 1;
+        }
+        else {
+            for (int i = 1; i < setOfIDs.size() + 1; i++) {
+                if (!setOfIDs.contains(i)) {
+                    return (Integer) i;
+                }
+
+            }
+        }
+        return (Integer) setOfIDs.size() + 1;
     }
 
     /**
