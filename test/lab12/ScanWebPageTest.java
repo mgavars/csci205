@@ -42,18 +42,8 @@ public class ScanWebPageTest extends TestCase {
         super.tearDown();
     }
 
-    /*
-    public void testMainMalformedURLException() throws Exception {
-        System.out.println("test malformed URL");
-        try {
-            instance.giveChange();
-            fail("Improper checking for giveChange()");
-        } catch (ChangeException expected) {
-        }
-    }
-     */
     /**
-     * Test of scanURL method, of class ScanWebPage.
+     * Test Malformed URL.
      */
     public void testMalformedURL() {
         System.out.println("Malformed URL");
@@ -66,6 +56,12 @@ public class ScanWebPageTest extends TestCase {
         }
     }
 
+    /**
+     * Test IllegalArgumentException
+     *
+     * @throws MalformedURLException
+     * @throws IOException
+     */
     public void testIllegalArgumentException() throws MalformedURLException, IOException {
         System.out.println("Malformed URL");
         String address = "https:\\www.bucknell.edu";
@@ -78,6 +74,9 @@ public class ScanWebPageTest extends TestCase {
         }
     }
 
+    /**
+     * Test IOException
+     */
     public void testIOException() {
         System.out.println("Malformed URL");
         String address = "https://www.bucknell.edu/blah.html";
